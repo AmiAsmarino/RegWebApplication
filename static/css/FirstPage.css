@@ -1,0 +1,14 @@
+button {
+  background-color: #533A2E;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: yellow;
+  }
+}
