@@ -32,6 +32,13 @@
   </div>
 </nav>
 
+{% for pet in pets %}
+        <li>
+
+                {{ pet.firstName }} and email {{ pet.lastName }}
+
+        </li>
+{% endfor %}
 
   </body>
 </html>

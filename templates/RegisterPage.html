@@ -11,59 +11,41 @@
 
 <body>
 
+<form action= "{{ url_for('after_reg_new_user') }}" method="post">
   <div class="container register">
                 <div class="row">
 
                     <div class="col-md-9 register-right">
 
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <h3 class="register-heading"> Taxi User Register</h3>
+                          <h3 class="register-heading"> Taxi User Register</h3>
                                 <div class="row register-form">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                            <input type="text" class="form-control" name="firstName" placeholder="First Name *" value="" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                            <input type="text" class="form-control" name="lastName" placeholder="Last Name *" value="" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Password *" value="" />
+                                            <input type="password" class="form-control" name="password" placeholder="Password *" value="" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control"  placeholder="Confirm Password *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="maxl">
-                                                <label class="radio inline">
-                                                    <input type="radio" name="gender" value="male" checked>
-                                                    <span> Male </span>
-                                                </label>
-                                                <label class="radio inline">
-                                                    <input type="radio" name="gender" value="female">
-                                                    <span>Female </span>
-                                                </label>
-                                            </div>
+                                            <input type="password" class="form-control" name="confPassword" placeholder="Confirm Password *" value="" />
                                         </div>
                                     </div>
+
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                                            <input type="email" class="form-control" name="email" placeholder="Your Email *" value="" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
+                                            <input type="text"   class="form-control" name="telephone" placeholder="Your Phone *" value="" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="City *" value="" />
+                                            <input type="text" class="form-control" name="city" placeholder="City *" value="" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder=" Taxi Company Name *" value="" />
-                                        </div>
-
-                                        <input type="submit" class="btnRegister"  value="Register"/>
-                                    </div>
-                                </div>
-                            </div>
+                                            <input type="text" class="form-control" name="company" placeholder=" Taxi Company Name *" value="" />
 
 
                           <input type="submit" class="btnRegister"  value="Register"/>
@@ -71,6 +53,7 @@
                   </div>
               </div>
       </div>
+    </form>
 
   </body>
 </html>
